@@ -1,0 +1,72 @@
+.footer {
+    padding-top: 40px;
+    padding-bottom: 24px;
+}
+.footer__wrapper {
+    display: flex;
+    margin-bottom: 24px;
+}
+.footer__inner {
+    width: 25%;
+}
+.footer__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0d0d0d;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+.footer__link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #64748b;
+    line-height: 24px;
+}
+.mb-4 {
+    margin-bottom: 16px;
+}
+.footer__dokon {
+    width: 254px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #f1f5f9;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #0f172a;
+}
+.footer__payment {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.footer__payment .footer__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 151px;
+    background-color: #f2f2f7;
+    border-radius: 8px;
+    height: 54px;
+}
+.footer__bottom-text {
+    padding-top: 24px;
+    text-align: center;
+    border-top: 1px solid #dfdee2;
+    font-size: 16px;
+    font-weight: 500;
+    color: #64748b;
+    line-height: 24px;
+}
+.footer__social {
+    display: flex;
+}
+.footer__icon {
+    padding: 0 8px;
+    font-size: 24px;
+}
