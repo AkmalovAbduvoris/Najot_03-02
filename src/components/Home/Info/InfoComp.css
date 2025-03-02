@@ -1,4 +1,12 @@
 .info {
+    margin-bottom: 40px;
+}
+.info__wrapper {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 16px;
+    font-weight: 400;
 }
 .info__title {
     text-align: center;
@@ -12,8 +20,8 @@
     margin-bottom: 16px;
 }
 .info__list {
-    padding-top: 65px;
-    padding-bottom: 140px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 .info__item {
 }
@@ -43,6 +51,10 @@
 }
 .opening {
     height: 140px;
-    opacity: 1;
-    
+    opacity: 1;   
+}
+.info__bottom-text {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 56px;
 }

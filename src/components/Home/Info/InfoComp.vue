@@ -46,6 +46,16 @@ function openText2(){
                             </Transition>
                         </li>
                     </ul>
+                    <p class="info__bottom-text">
+                        <br>
+                        "Asaxiy Books" MCHJ
+                        <br>
+                        Ro'yxatdan o'tish raqami: 646439
+                        <br>
+                        INN: 305829008
+                        <br>
+                        MCHJ rahbari: Allayev Firuz Abdunasimovich
+                    </p>
                 </div>
             </div>
         </div>

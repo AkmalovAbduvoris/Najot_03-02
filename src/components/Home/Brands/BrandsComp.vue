@@ -23,6 +23,7 @@ const carouselConfig = {
     itemsToShow: 6.5,
     wrapAround: true,
     autoplay: 4000,
+    snapAlign: "start",
 };
 </script>
 

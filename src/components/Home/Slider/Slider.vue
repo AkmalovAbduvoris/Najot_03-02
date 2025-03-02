@@ -16,6 +16,7 @@ const carouselConfig = {
     itemsToShow: 4,
     wrapAround: true,
     autoplay: 4000,
+    snapAlign: "start",
 };
 </script>
 
@@ -42,5 +43,25 @@ const carouselConfig = {
 }
 .slider__img {
     border-radius: 10px;
+}
+:deep(.carousel__prev) {
+    width: 35px;
+    height: 35px;
+    left: -20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    color: #006bff;
+    border: 1px solid #006bff;
+}
+:deep(.carousel__next) {
+    width: 35px;
+    height: 35px;
+    right: -20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    color: #006bff;
+    border: 1px solid #006bff;
 }
 </style>

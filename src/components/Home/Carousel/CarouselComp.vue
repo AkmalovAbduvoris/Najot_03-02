@@ -14,6 +14,7 @@ const carouselConfig = {
     itemsToShow: 6.5,
     wrapAround: true,
     autoplay: 5000,
+    snapAlign: "start",
 };
 </script>
 
@@ -24,13 +25,15 @@ const carouselConfig = {
         <div class="carousel__wrapper">
             <Carousel v-bind="carouselConfig">
                 <Slide v-for="product in products" :key="product.id">
-                    <div class="carousel__card">
+                    <router-link :to="'/product/' + product.id">
+                        <div class="carousel__card">
                         <img :src="product.image1" :alt="product.name" width="122" height="125" />
                         <h3 class="carousel__title">{{ product.description }}</h3>
                         <p class="carousel__discount">{{ product.price }} so'm</p>
                         <p class="carousel__price">{{ product.price }} so'm</p>
                         <button class="carousel__btn">14.03.2025</button>
                     </div>
+                    </router-link>
                 </Slide>
                 <template #addons>
                     <Navigation class="carusel__navigte" />
@@ -103,8 +106,24 @@ const carouselConfig = {
     border-radius: 5px;
     cursor: pointer;
 }
-/* .carusel__navigte {
-    border: 50% !important;
-    border: 1px solid #006bff !important;
-} */
+:deep(.carousel__prev) {
+    width: 35px;
+    height: 35px;
+    left: -30px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    color: #006bff;
+    border: 1px solid #006bff;
+}
+:deep(.carousel__next) {
+    width: 35px;
+    height: 35px;
+    right: -30px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    color: #006bff;
+    border: 1px solid #006bff;
+}
 </style>

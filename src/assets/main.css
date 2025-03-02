@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -6,12 +7,135 @@
   list-style: none;
   text-decoration: none;
 }
+
 body {
   background-color: #f7f9fc;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1392px;
+}
+.product {
+  margin-bottom: 40px;
+}
+.product__link {
+  display: flex;
+  justify-content: space-between;
+}
+.product__header {
+  color: #262626;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+.product__text {
+
+}
+.product__card {
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+  position: relative;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  margin: 0 10px;
+}
+
+.product__card:hover {
+  transform: scale(1.03);
+}
+
+.product__heart {
+  position: absolute;
+  top: 45px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+}
+
+.product__compare {
+  position: absolute;
+  top: 75px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+}
+
+.product__img {
+  margin-bottom: 16px;
+}
+
+.product__title {
+  text-align: start;
+  color: #141821;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: inherit;
+  line-height: 20px;
+}
+
+.product__rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product__icon {
+  font-size: 13px;
+  color: #fe7300;
+}
+
+.product__comment {
+  margin-left: 5px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #c2c6d1;
+}
+
+.product__price {
+  text-align: start;
+  font-size: 18px;
+  font-weight: 700;
+  color: #006bff;
+  margin-top: 4px;
+}
+
+.product__pay {
+  border-radius: 5px;
+  padding: 4px;
+  text-align: start;
+  border: 1px solid #fe7300;
+  color: #fe7300;
+  margin: 8px 0 4px;
+}
+
+.product__btns {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.product__buy {
+  font-size: 13px;
+  cursor: pointer;
+  background-color: #006bff;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  padding: 11px 8px;
+  width: 100%;
+  height: 100%;
+}
+
+.product__cart {
+  margin: 0 4px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00bfaf;
+  padding: 5px 11px;
 }
