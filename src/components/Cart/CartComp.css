@@ -1,0 +1,31 @@
+.cart__list{
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 10px 30px;
+}
+.cart__item {
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+
+}
+.cart__img {
+    margin-right: 36px;
+}
+.cart__title {
+    font-size: 16px;
+    max-width: 320px;
+    font-weight: 500;
+    color: #000;
+    line-height: 22px;
+}
+.cart__btn {
+    color: #fff;
+    padding: 4px 8px;
+    border: none;
+    line-height: 1.5;
+    position: relative;
+    background-color: #008dff;
+    border-radius: 10px;
+    border-color: #008dff;
+}

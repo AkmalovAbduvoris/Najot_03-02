@@ -1,15 +1,11 @@
 <script setup>
-import { ref, onMounted } from "vue";
+import { storeToRefs } from "pinia";
 import "vue3-carousel/carousel.css";
-import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
-import { getAllProducts } from "../../../sercive/apiService";
+import { Carousel, Slide, Navigation } from "vue3-carousel";
+import { useProductStore } from "@/store/counter";
 
-const products = ref([]);
-
-onMounted(async () => {
-    products.value = await getAllProducts();
-});
-
+const productStore = useProductStore();
+const { products } = storeToRefs(productStore);
 const carouselConfig = {
     itemsToShow: 6.5,
     wrapAround: true,

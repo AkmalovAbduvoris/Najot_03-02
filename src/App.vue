@@ -6,8 +6,8 @@ import HeaderComp from './components/Header/HeaderComp.vue';
 
 <template>
     <HeaderComp />
-  <main>
-    <RouterView />
-  </main>
-  <FooterComp />
+    <main>
+        <RouterView />
+    </main>
+    <FooterComp />
 </template>

@@ -1,0 +1,29 @@
+.liked {
+    padding: 20px 0;
+}
+.liked__text {
+    color: #858997;
+    margin-bottom: 20px;
+}
+.empty__img {
+    margin-bottom: 24px;
+}
+.empty__title {
+    font-weight: 700 !important;
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.empty__text {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.empty__div {
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

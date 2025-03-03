@@ -139,3 +139,6 @@ main {
   background-color: #00bfaf;
   padding: 5px 11px;
 }
+button {
+  cursor: pointer;
+}

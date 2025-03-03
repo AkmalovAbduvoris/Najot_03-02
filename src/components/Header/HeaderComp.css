@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 101;
     box-shadow: 0px 10px 30px rgba(209, 213, 223, .5);
     background-color: #fff;
 }
@@ -66,6 +66,7 @@
     transition: all .2sease;
 }
 .header__item {
+    position: relative;
     text-align: center;
     width: 85px;
 }
@@ -90,4 +91,20 @@
     font-weight: 500;
     color: #282830;
     line-height: 19px;
+}
+.header__like {
+    position: absolute;
+    top: 0;
+    right: 24px;
+    font-size: 11px;
+    background-color: #006bff;
+    border-radius: 50px;
+    height: 16px;
+    line-height: 16px;
+    color: #fff;
+    min-width: 16px;
+    text-align: center;
+    padding: 0 5px;
+    display: inline-block;
+    vertical-align: top;
 }

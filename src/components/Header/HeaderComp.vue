@@ -1,5 +1,10 @@
 <script setup>
 import './HeaderComp.css';
+import { storeToRefs } from "pinia";
+import { useProductStore } from "@/store/counter";
+
+const productStore = useProductStore();
+const { likedCount, countedProductsLength } = storeToRefs(productStore);
 </script>
 
 <template>
@@ -35,12 +40,18 @@ import './HeaderComp.css';
                         <p class="header__text">Trek</p>
                     </li>
                     <li class="header__item">
+                        <router-link to="/cart" class="header__link">
+                            <span class="header__like">{{ countedProductsLength }}</span>
                         <img src="/img/cart.svg" height="20" width="20" alt="Savatcha" />
                         <p class="header__text">Savatcha</p>
+                        </router-link>
                     </li>
                     <li class="header__item">
+                        <router-link to="/liked" class="header__link">
+                            <span class="header__like">{{ likedCount }}</span>
                         <img src="/img/heart.svg" height="20" width="23" alt="Sevimlilar" />
                         <p class="header__text">Sevimlilar</p>
+                        </router-link>
                     </li>
                     <li class="header__item">
                         <img src="/img/compare_header.svg" height="20" width="24" alt="Til" />

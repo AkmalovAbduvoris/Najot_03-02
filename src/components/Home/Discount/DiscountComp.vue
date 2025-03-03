@@ -1,25 +1,11 @@
 <script setup>
-import { ref, onMounted } from "vue";
-import { getAllProducts, updateLikeStatus } from "../../../sercive/apiService";
+import { storeToRefs } from "pinia";
 import { formatPrice } from "../../../utils/utils";
-
-const products = ref([]);
-
-onMounted(async () => {
-    products.value = await getAllProducts();
-});
-
-const toggleLike = async (productId) => {
-    const product = products.value.find(item => item.id === productId);
-    if (!product) return;
-
-    const newLikeStatus = !product.like;
-
-    const updatedProduct = await updateLikeStatus(productId, newLikeStatus);
-
-    if (updatedProduct) {
-        product.like = updatedProduct.like;
-    }
+import { useProductStore } from "@/store/counter";
+const productStore = useProductStore();
+const { products } = storeToRefs(productStore);
+const handleToggleLike = (productId) => {
+    productStore.toggleLike(productId);
 };
 </script>
 
@@ -33,7 +19,7 @@ const toggleLike = async (productId) => {
             
             <div class="product__list">
                 <div v-for="product in products.slice(0,10)" :key="product.id" class="product__item">
-                    <button class="product__heart" @click="toggleLike(product.id)">
+                    <button class="product__heart" @click="handleToggleLike(product.id)">
                         <img :src="product.like ? '/img/product__heart-full.svg' : '/img/product__heart.svg'"
                         alt="heart">
                     </button>
